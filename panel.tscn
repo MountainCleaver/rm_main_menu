@@ -1,0 +1,62 @@
+[gd_scene load_steps=2 format=3 uid="uid://cdnvhelwta67w"]
+
+[ext_resource type="Script" uid="uid://xmxl8eu41cln" path="res://panel.gd" id="1_y26ic"]
+
+[node name="Panel" type="Panel"]
+anchors_preset = -1
+anchor_left = 0.762
+anchor_top = 0.39
+anchor_right = 0.955
+anchor_bottom = 0.838
+offset_left = 0.175964
+offset_top = 0.279984
+offset_right = -0.160034
+offset_bottom = -0.0241089
+grow_horizontal = 0
+grow_vertical = 2
+script = ExtResource("1_y26ic")
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.126
+anchor_top = 0.166
+anchor_right = 0.865
+anchor_bottom = 0.317
+offset_left = 0.0279999
+offset_top = -0.139996
+offset_right = -0.030014
+offset_bottom = -12.93
+grow_horizontal = 2
+grow_vertical = 2
+text = "continue"
+
+[node name="Button2" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.126
+anchor_top = 0.282
+anchor_right = 0.865
+anchor_bottom = 0.461
+offset_left = 0.0279999
+offset_top = 9.22004
+offset_right = -0.030014
+offset_bottom = -11.69
+grow_horizontal = 2
+grow_vertical = 2
+text = "New Game"
+
+[node name="Button3" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.126
+anchor_top = 0.422
+anchor_right = 0.865
+anchor_bottom = 0.569
+offset_left = 0.0279999
+offset_top = 11.62
+offset_right = -0.030014
+offset_bottom = -0.00994873
+grow_horizontal = 2
+grow_vertical = 2
+text = "Options"

@@ -1,0 +1,48 @@
+[gd_scene load_steps=7 format=3 uid="uid://cxqvlief8r1mc"]
+
+[ext_resource type="FontFile" uid="uid://d3uxhho13pmsj" path="res://basis33.ttf" id="1_r04n3"]
+
+[sub_resource type="Gradient" id="Gradient_0vvm8"]
+interpolation_mode = 2
+offsets = PackedFloat32Array(0, 0.257951, 0.759717, 0.991803)
+colors = PackedColorArray(0, 0, 0, 0, 1, 1, 1, 0.678431, 1, 1, 1, 0.678431, 0, 0, 0, 0)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_r04n3"]
+gradient = SubResource("Gradient_0vvm8")
+width = 500
+use_hdr = true
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_n4tde"]
+texture = SubResource("GradientTexture1D_r04n3")
+expand_margin_left = 60.0
+expand_margin_right = 60.0
+modulate_color = Color(1, 1, 1, 0.670588)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_n4tde"]
+bg_color = Color(1, 1, 1, 0.670588)
+border_width_left = 60
+border_width_right = 60
+border_color = Color(0, 0, 0, 0)
+border_blend = true
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0vvm8"]
+bg_color = Color(0, 0, 0, 0)
+
+[node name="Button" type="Button"]
+anchors_preset = -1
+anchor_left = 0.79
+anchor_top = 0.679
+anchor_right = 1.0
+anchor_bottom = 0.716
+offset_left = -0.0800171
+offset_top = 1.008
+offset_right = -161.0
+offset_bottom = 0.0319824
+theme_override_colors/font_hover_color = Color(0.2, 0.2, 0.2, 1)
+theme_override_colors/font_pressed_color = Color(0.2, 0.2, 0.2, 1)
+theme_override_fonts/font = ExtResource("1_r04n3")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/focus = SubResource("StyleBoxTexture_n4tde")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_n4tde")
+theme_override_styles/normal = SubResource("StyleBoxFlat_0vvm8")
+text = "Star Game"

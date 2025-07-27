@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://de062fga7o0xq"]
+
+[sub_resource type="Theme" id="Theme_uchyk"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_uchyk"]
+bg_color = Color(1, 0.6, 0.6, 1)
+border_color = Color(0.569332, 0.839601, 1, 1)
+
+[node name="Button" type="Button"]
+anchors_preset = -1
+anchor_left = 0.841
+anchor_top = 0.622
+anchor_right = 1.0
+anchor_bottom = 0.67
+offset_left = 0.167969
+offset_top = -0.0560303
+offset_right = -87.0
+offset_bottom = -0.160004
+theme = SubResource("Theme_uchyk")
+theme_override_styles/normal = SubResource("StyleBoxFlat_uchyk")
+text = "Start Game"
+flat = true
